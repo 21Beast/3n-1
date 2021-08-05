@@ -13,15 +13,14 @@ void threen(int a) {
     }
     else if (a % 2 == 0) {
         a = a / 2;
-        std::cout << a <<"\n";
+        /*std::cout << a <<"\n";*/
         count++;
         threen(a);
-        
     }
     else
     {
         a = 3 * a + 1;
-        std::cout << a << "\n";
+        /*std::cout << a << "\n";*/
         count++;
         threen(a);
     }
@@ -31,7 +30,7 @@ int main()
 {
     int x;
     std::cout << "3n +1 \n";
-    /*std::cin >> x;*/
-    x = 2147483646;
+    std::cin >> x;
+    /*x = 2147483646;*/
     threen(x);
 }
